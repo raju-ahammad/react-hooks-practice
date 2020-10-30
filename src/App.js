@@ -1,16 +1,14 @@
 import './App.css';
-import AddItems from './Components/AddItems';
-import CounterHooks from './Components/CounterHooks';
-import HooksCounter from './Components/HooksCounter';
-import InputHooks from './Components/InputHooks';
+import EffectHooks from './Components/EffectHooks';
 
 function App() {
   return (
     <div className="App">
-      <HooksCounter/>
+      {/* <HooksCounter/>
       <CounterHooks/>
      <InputHooks/>
-     <AddItems/>
+     <AddItems/> */}
+     <EffectHooks/>
     </div>
   );
 }
