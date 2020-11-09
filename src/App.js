@@ -1,14 +1,17 @@
 import './App.css';
-import EffectHooks from './Components/EffectHooks';
+import ClassCounter from './ClassComponents/ClassCounter';
+import HooksCounter from './Components/HooksCounter';
 
 function App() {
   return (
     <div className="App">
+      <ClassCounter/>
+      <HooksCounter/>
       {/* <HooksCounter/>
-      <CounterHooks/>
+      
      <InputHooks/>
      <AddItems/> */}
-     <EffectHooks/>
+     {/* <EffectHooks/> */}
     </div>
   );
 }
