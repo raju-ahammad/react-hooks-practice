@@ -1,17 +1,18 @@
+import React from 'react';
 import './App.css';
-import ClassCounter from './ClassComponents/ClassCounter';
-import HooksCounter from './Components/HooksCounter';
+import CompA from './Context/CompA';
 
+export const UserContext = React.createContext()
+export const NewContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <ClassCounter/>
-      <HooksCounter/>
-      {/* <HooksCounter/>
+      <UserContext.Provider value={'raju'}>
+        <NewContext.Provider value={'ahammad'}>
+        <CompA/>
+        </NewContext.Provider>
+      </UserContext.Provider> 
       
-     <InputHooks/>
-     <AddItems/> */}
-     {/* <EffectHooks/> */}
     </div>
   );
 }
